@@ -22,11 +22,10 @@ public class EncodingFilter implements Filter {
 		
 		HttpServletRequest request = (HttpServletRequest) req;
 		HttpServletResponse response = (HttpServletResponse) resp;
-<<<<<<< HEAD
 
 		request.setCharacterEncoding("UTF-8");
 		chain.doFilter(request, response);
-=======
+
 
 		System.out.println("1!");
 		request.setCharacterEncoding("UTF-8");
@@ -34,7 +33,6 @@ public class EncodingFilter implements Filter {
 		System.out.println("Hello");
 		System.out.println("Hi!!");
 
->>>>>>> branch 'master' of https://github.com/EEIT10303/Remode20181015.git
 	}
 	private FilterConfig filterConfig;
 	@Override
