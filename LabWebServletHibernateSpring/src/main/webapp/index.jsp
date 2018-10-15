@@ -8,10 +8,9 @@
 <title>Home</title>
 </head>
 <body>
-123123123
+3333333333
 <h3>Welcome ${user.email}</h3>
 <h3><a href="<c:url value="/secure/login.jsp" />">Login</a></h3>
 <h3><a href="<c:url value="/pages/product.jsp" />">Poduct</a></h3>
-789789789789789
 </body>
 </html>
