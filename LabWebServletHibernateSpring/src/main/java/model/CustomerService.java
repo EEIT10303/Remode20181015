@@ -9,6 +9,7 @@ import org.springframework.stereotype.Service;
 public class CustomerService {
 	@Autowired
 	private CustomerDAO customerDao;
+	
 
 	public CustomerBean login(String username, String password) {
 		CustomerBean bean = customerDao.select(username);
@@ -18,6 +19,7 @@ public class CustomerService {
 				byte[] temp = password.getBytes();	//使用者輸入
 				if(Arrays.equals(pass, temp)) {
 					return bean;
+					
 				}
 			}
 		}
@@ -25,6 +27,7 @@ public class CustomerService {
 	}
 	public boolean changePassword(String username, String oldPassword, String newPassword) {
 		CustomerBean bean = this.login(username, oldPassword);
+		System.out.println("hahhahaha");
 		if(bean!=null) {
 			byte[] temp = newPassword.getBytes();
 			return customerDao.update(temp, bean.getEmail(), bean.getBirth(), username);
