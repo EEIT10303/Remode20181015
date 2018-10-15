@@ -9,7 +9,11 @@ import org.springframework.stereotype.Service;
 public class CustomerService {
 	@Autowired
 	private CustomerDAO customerDao;
+<<<<<<< HEAD
 
+=======
+
+>>>>>>> branch 'master' of https://github.com/EEIT10303/Remode20181015.git
 	public CustomerBean login(String username, String password) {
 		CustomerBean bean = customerDao.select(username);
 		if(bean!=null) {

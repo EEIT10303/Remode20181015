@@ -45,8 +45,17 @@ public class ProductController {
 //接收資料
 //轉換資料
 		Map<String, String> errors = new HashMap<>();
+<<<<<<< HEAD
 		model.addAttribute("errorMsgs", errors);
 
+=======
+
+
+		model.addAttribute("errorMsgs", errors);
+
+
+
+>>>>>>> branch 'master' of https://github.com/EEIT10303/Remode20181015.git
 		if(bindingResult!=null && bindingResult.hasFieldErrors()) {
 			if(bindingResult.hasFieldErrors("id")) {
 				errors.put("xxx1", "Id必須是整數(FormBean)");

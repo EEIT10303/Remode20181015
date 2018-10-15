@@ -29,6 +29,7 @@ public class LoginController {
 //驗證資料
 		Map<String, String> errors = new HashMap<String, String>();
 		model.addAttribute("errors", errors);
+<<<<<<< HEAD
 		
 		if(username==null || username.length()==0) {
 			errors.put("username",
@@ -46,6 +47,29 @@ public class LoginController {
 //呼叫model
 		CustomerBean bean = customerService.login(username, password);
 		
+=======
+
+		System.out.println("wawawhahahahaha");
+		if(username==null || username.length()==0) {
+			errors.put("username",
+					context.getMessage("login.username.required", null, locale));
+		}
+		if(password==null || password.length()==0) {
+			errors.put("password",
+					context.getMessage("login.password.required", null, locale));
+		}
+		
+		if(errors!=null && !errors.isEmpty()) {
+			return "login.errors";
+		}
+		
+//呼叫model
+
+		CustomerBean bean = customerService.login(username, password);
+		
+
+
+>>>>>>> branch 'master' of https://github.com/EEIT10303/Remode20181015.git
 //根據model執行結果，導向view
 		if(bean==null) {
 			errors.put("password", "Login failed, please try again.");
