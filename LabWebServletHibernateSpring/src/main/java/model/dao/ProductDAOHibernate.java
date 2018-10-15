@@ -49,7 +49,8 @@ public class ProductDAOHibernate implements ProductDAO {
 			temp.setName(name);
 			temp.setPrice(price);
 			temp.setMake(make);
-			temp.setExpire(expire);
+            temp.setExpire(expire);
+
 		}
 		return temp;
 	}

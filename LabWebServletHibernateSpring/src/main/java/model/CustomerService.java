@@ -10,6 +10,7 @@ public class CustomerService {
 	@Autowired
 	private CustomerDAO customerDao;
 
+
 	public CustomerBean login(String username, String password) {
 		CustomerBean bean = customerDao.select(username);
 		if(bean!=null) {
@@ -18,6 +19,7 @@ public class CustomerService {
 				byte[] temp = password.getBytes();	//使用者輸入
 				if(Arrays.equals(pass, temp)) {
 					return bean;
+					
 				}
 			}
 		}
@@ -25,10 +27,9 @@ public class CustomerService {
 	}
 	public boolean changePassword(String username, String oldPassword, String newPassword) {
 		CustomerBean bean = this.login(username, oldPassword);
-		if(bean!=null) {
-			byte[] temp = newPassword.getBytes();
-			return customerDao.update(temp, bean.getEmail(), bean.getBirth(), username);
-		}
+		System.out.println("hahhahaha");
 		return false;
+
 	}
+	
 }
