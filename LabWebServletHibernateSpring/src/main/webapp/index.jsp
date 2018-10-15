@@ -9,6 +9,7 @@
 </head>
 <body>
 <<<<<<< HEAD
+<<<<<<< HEAD
 1225325
 <h3>Welcome ${user.email}</h3>
 <h3><a href="<c:url value="/secure/login.jsp" />">Login</a></h3>
@@ -26,9 +27,10 @@ test9999
 <h3>Welcome ${user.email}</h3>
 <h3><a href="<c:url value="/secure/login.jsp" />">Login</a></h3>
 <h3><a href="<c:url value="/pages/product.jsp" />">Poduct</a></h3>
-
-
+=======
 >>>>>>> branch 'master' of https://github.com/EEIT10303/Remode20181015.git
+
+
 <h3>Welcome ${user.email}</h3>
 <h3><a href="<c:url value="/secure/login.jsp" />">Login</a></h3>
 <h3><a href="<c:url value="/pages/product.jsp" />">Poduct</a></h3>
