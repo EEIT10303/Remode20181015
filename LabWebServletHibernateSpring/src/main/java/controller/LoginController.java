@@ -29,7 +29,7 @@ public class LoginController {
 //驗證資料
 		Map<String, String> errors = new HashMap<String, String>();
 		model.addAttribute("errors", errors);
-		
+		System.out.println("hahahahaha");
 		if(username==null || username.length()==0) {
 			errors.put("username",
 					context.getMessage("login.username.required", null, locale));
