@@ -28,6 +28,7 @@ public class EncodingFilter implements Filter {
 		chain.doFilter(request, response);
 		System.out.println("Hello");
 		System.out.println("Hi!!");
+
 	}
 	private FilterConfig filterConfig;
 	@Override
