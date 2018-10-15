@@ -47,7 +47,7 @@ public class ProductController {
 		Map<String, String> errors = new HashMap<>();
 		model.addAttribute("errorMsgs", errors);
 
-		System.out.println(errors);
+		System.out.println(bindingResult);
 		if(bindingResult!=null && bindingResult.hasFieldErrors()) {
 			if(bindingResult.hasFieldErrors("id")) {
 				errors.put("xxx1", "Id必須是整數(FormBean)");
