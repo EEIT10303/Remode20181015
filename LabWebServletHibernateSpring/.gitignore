@@ -1,4 +1,5 @@
 /.settings/
 /.classpath
-/.preoject
-/target/.springBeans/
+/target/
+/.springBeans
+/.project
