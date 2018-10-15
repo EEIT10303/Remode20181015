@@ -27,6 +27,7 @@ public class EncodingFilter implements Filter {
 		request.setCharacterEncoding("UTF-8");
 		chain.doFilter(request, response);
 		System.out.println("Hello");
+		System.out.println("Hi!!");
 	}
 	private FilterConfig filterConfig;
 	@Override
