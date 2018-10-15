@@ -1,1 +1,9 @@
 /.settings/
+<<<<<<< HEAD
+=======
+/.project
+/.classpath
+/.springBeans
+/target/
+
+>>>>>>> branch 'master' of https://github.com/EEIT10303/Remode20181015.git

@@ -10,6 +10,7 @@ public class CustomerService {
 	@Autowired
 	private CustomerDAO customerDao;
 
+<<<<<<< HEAD
 	public CustomerBean login(String username, String password) {
 		CustomerBean bean = customerDao.select(username);
 		if(bean!=null) {
@@ -31,4 +32,28 @@ public class CustomerService {
 		}
 		return false;
 	}
+=======
+
+	public CustomerBean login(String username, String password) {
+		CustomerBean bean = customerDao.select(username);
+		if(bean!=null) {
+			if(password!=null && password.length()!=0) {
+				byte[] pass = bean.getPassword();	//資料庫抓出
+				byte[] temp = password.getBytes();	//使用者輸入
+				if(Arrays.equals(pass, temp)) {
+					return bean;
+					
+				}
+			}
+		}
+		return null;
+	}
+	public boolean changePassword(String username, String oldPassword, String newPassword) {
+		CustomerBean bean = this.login(username, oldPassword);
+		System.out.println("hahhahaha");
+		return false;
+
+	}
+	
+>>>>>>> branch 'master' of https://github.com/EEIT10303/Remode20181015.git
 }

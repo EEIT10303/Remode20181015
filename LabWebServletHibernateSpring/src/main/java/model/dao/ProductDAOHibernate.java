@@ -49,7 +49,12 @@ public class ProductDAOHibernate implements ProductDAO {
 			temp.setName(name);
 			temp.setPrice(price);
 			temp.setMake(make);
+<<<<<<< HEAD
 			temp.setExpire(expire);
+=======
+            temp.setExpire(expire);
+
+>>>>>>> branch 'master' of https://github.com/EEIT10303/Remode20181015.git
 		}
 		return temp;
 	}
