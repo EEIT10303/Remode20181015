@@ -29,6 +29,7 @@ public class LoginController {
 //驗證資料
 		Map<String, String> errors = new HashMap<String, String>();
 		model.addAttribute("errors", errors);
+
 		System.out.println("wawawhahahahaha");
 		if(username==null || username.length()==0) {
 			errors.put("username",
@@ -46,6 +47,7 @@ public class LoginController {
 //呼叫model
 		CustomerBean bean = customerService.login(username, password);
 		
+
 //根據model執行結果，導向view
 		if(bean==null) {
 			errors.put("password", "Login failed, please try again.");
